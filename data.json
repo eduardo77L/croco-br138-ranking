@@ -339,11 +339,6 @@
       "derrotados": 67111771
     },
     {
-      "nome": "JLK09",
-      "aldeias": 522,
-      "derrotados": 78761341
-    },
-    {
       "nome": "No Panic.",
       "aldeias": 500,
       "derrotados": 43916085
@@ -389,6 +384,11 @@
       "nome": "PARA",
       "aldeias": 577,
       "derrotados": 55560682
+    },
+    {
+      "nome": "JLK09",
+      "aldeias": 522,
+      "derrotados": 78761341
     },
     {
       "nome": "Chivunk",
