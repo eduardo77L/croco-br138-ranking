@@ -381,14 +381,14 @@
   ],
   "aceitarConvite": [
     {
+      "nome": "BetaTW",
+      "aldeias": 699,
+      "derrotados": 18213735
+    },
+    {
       "nome": "PARA",
       "aldeias": 577,
       "derrotados": 55560682
-    },
-    {
-      "nome": "lesj",
-      "aldeias": 411,
-      "derrotados": 41195253
     },
     {
       "nome": "Chivunk",
@@ -399,6 +399,21 @@
       "nome": "Dyow",
       "aldeias": 449,
       "derrotados": 18909689
+    },
+    {
+      "nome": "lesj",
+      "aldeias": 411,
+      "derrotados": 41195253
+    },
+    {
+      "nome": "budniak",
+      "aldeias": 396,
+      "derrotados": 59363918
+    },
+    {
+      "nome": "topp3rsson",
+      "aldeias": 369,
+      "derrotados": 51040436
     },
     {
       "nome": "ViníciuS",
@@ -416,9 +431,9 @@
       "derrotados": 212948
     },
     {
-      "nome": "Arqueiro Azul",
-      "aldeias": 245,
-      "derrotados": 16432820
+      "nome": "The old Lorde King",
+      "aldeias": 249,
+      "derrotados": 14366208
     },
     {
       "nome": "Abutre solo",
@@ -426,14 +441,9 @@
       "derrotados": 26125682
     },
     {
-      "nome": "The old Lorde King",
-      "aldeias": 249,
-      "derrotados": 14366208
-    },
-    {
-      "nome": "Rei Inep",
-      "aldeias": 184,
-      "derrotados": 19728199
+      "nome": "Arqueiro Azul",
+      "aldeias": 245,
+      "derrotados": 16432820
     },
     {
       "nome": "Annakin",
@@ -444,6 +454,11 @@
       "nome": "-Dinasty-",
       "aldeias": 216,
       "derrotados": 15758275
+    },
+    {
+      "nome": "Rei Inep",
+      "aldeias": 184,
+      "derrotados": 19728199
     },
     {
       "nome": "abimael18",
@@ -486,14 +501,14 @@
       "derrotados": 6086241
     },
     {
-      "nome": "Crockz0r",
-      "aldeias": 25,
-      "derrotados": 63348591
-    },
-    {
       "nome": "clandestino15",
       "aldeias": 25,
       "derrotados": 63865206
+    },
+    {
+      "nome": "Crockz0r",
+      "aldeias": 25,
+      "derrotados": 63348591
     },
     {
       "nome": "Grotesca",
@@ -509,11 +524,6 @@
       "nome": "longmessa",
       "aldeias": 6,
       "derrotados": 1505046
-    },
-    {
-      "nome": "BetaTW",
-      "aldeias": 699,
-      "derrotados": 18213735
     }
   ]
 }
