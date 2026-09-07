@@ -94,6 +94,24 @@ body::before {
   color: var(--ink-soft);
 }
 
+.notice {
+  margin-top: 1rem;
+  max-width: 68ch;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.notice p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.notice strong {
+  color: var(--accent-deep);
+}
+
 main section {
   margin: 0;
   padding: 1rem 0.85rem 0.75rem;
