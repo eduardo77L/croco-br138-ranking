@@ -58,20 +58,13 @@
         <section class="section-disputa" aria-labelledby="h-disputa">
           <div class="section-head">
             <h2 id="h-disputa">Em disputa</h2>
-            <button
-              type="button"
-              id="btn-ponderado"
-              class="btn-view"
-              aria-pressed="false"
-              title="Alternar visão: média do rank por aldeias com o rank por OD"
-            >
+            <button type="button" id="btn-ponderado" class="btn-view" aria-pressed="false">
               Ponderado por OD
             </button>
           </div>
-
-          <div class="table-wrap" data-view="padrao" id="view-disputa-padrao">
-            <table>
-              <thead>
+          <div class="table-wrap" id="view-disputa">
+            <table id="table-em-disputa">
+              <thead id="thead-em-disputa">
                 <tr>
                   <th scope="col" data-sort="ranking" title="Ordenar pelo ranking padrão (aldeias)">#</th>
                   <th scope="col">Nome</th>
@@ -80,21 +73,6 @@
                 </tr>
               </thead>
               <tbody id="tbody-em-disputa"></tbody>
-            </table>
-          </div>
-
-          <div class="table-wrap is-hidden" data-view="ponderado" id="view-disputa-ponderado" hidden>
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Rk aldeias</th>
-                  <th scope="col">Rk OD</th>
-                  <th scope="col">Pontos</th>
-                </tr>
-              </thead>
-              <tbody id="tbody-em-disputa-ponderado"></tbody>
             </table>
           </div>
         </section>

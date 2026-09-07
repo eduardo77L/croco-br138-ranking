@@ -16,8 +16,28 @@ const LISTAS = [
   },
 ];
 
+const THEAD_PADRAO = `
+  <tr>
+    <th scope="col" data-sort="ranking" title="Ordenar pelo ranking padrão (aldeias)">#</th>
+    <th scope="col">Nome</th>
+    <th scope="col" data-sort="aldeias" title="Ordenar por aldeias">Aldeias</th>
+    <th scope="col" data-sort="derrotados" title="Ordenar por OD">OD</th>
+  </tr>
+`;
+
+const THEAD_PONDERADO = `
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Nome</th>
+    <th scope="col">Rk aldeias</th>
+    <th scope="col">Rk OD</th>
+    <th scope="col">Pontos</th>
+  </tr>
+`;
+
 /** @type {Record<string, { rows: Array<{nome:string,aldeias:number,derrotados:number}>, sortBy: string, dir: 'asc'|'desc', defaultSort: string, tbody: HTMLElement, table: HTMLTableElement }>} */
 const state = {};
+let disputaPonderada = false;
 
 function comparar(a, b, sortBy, dir) {
   const mul = dir === 'asc' ? 1 : -1;
@@ -70,6 +90,7 @@ function listaPonderada(rows) {
 
 function renderLista(id) {
   const s = state[id];
+  if (!s) return;
   const { tbody, rows, sortBy, dir, defaultSort, table } = s;
   tbody.replaceChildren();
 
@@ -108,11 +129,13 @@ function renderLista(id) {
   });
 }
 
-function renderPonderado(rows) {
-  const tbody = document.getElementById('tbody-em-disputa-ponderado');
+function renderPonderadoNaTabela(rows) {
+  const thead = document.getElementById('thead-em-disputa');
+  const tbody = document.getElementById('tbody-em-disputa');
+  thead.innerHTML = THEAD_PONDERADO;
   tbody.replaceChildren();
-  const lista = listaPonderada(rows);
 
+  const lista = listaPonderada(rows);
   if (!lista.length) {
     const tr = document.createElement('tr');
     const td = document.createElement('td');
@@ -141,10 +164,23 @@ function renderPonderado(rows) {
   });
 }
 
+function restaurarDisputaPadrao() {
+  const thead = document.getElementById('thead-em-disputa');
+  thead.innerHTML = THEAD_PADRAO;
+  ligarSort('emDisputa');
+  renderLista('emDisputa');
+}
+
 function ligarSort(id) {
   const s = state[id];
+  if (!s) return;
+  s.table.querySelectorAll('th[data-sort]').forEach((th) => {
+    const clone = th.cloneNode(true);
+    th.parentNode.replaceChild(clone, th);
+  });
   s.table.querySelectorAll('th[data-sort]').forEach((th) => {
     th.addEventListener('click', () => {
+      if (id === 'emDisputa' && disputaPonderada) return;
       const next = th.dataset.sort;
       if (s.sortBy === next) {
         s.dir = s.dir === 'desc' ? 'asc' : 'desc';
@@ -159,21 +195,17 @@ function ligarSort(id) {
 
 function ligarPonderado(rows) {
   const btn = document.getElementById('btn-ponderado');
-  const viewPadrao = document.getElementById('view-disputa-padrao');
-  const viewPonderado = document.getElementById('view-disputa-ponderado');
-  if (!btn || !viewPadrao || !viewPonderado) return;
-
-  renderPonderado(rows);
+  if (!btn) return;
 
   btn.addEventListener('click', () => {
-    const ativo = btn.getAttribute('aria-pressed') === 'true';
-    const proximo = !ativo;
-    btn.setAttribute('aria-pressed', String(proximo));
-    btn.textContent = proximo ? 'Lista padrão' : 'Ponderado por OD';
-    viewPadrao.hidden = proximo;
-    viewPonderado.hidden = !proximo;
-    viewPadrao.classList.toggle('is-hidden', proximo);
-    viewPonderado.classList.toggle('is-hidden', !proximo);
+    disputaPonderada = !disputaPonderada;
+    btn.setAttribute('aria-pressed', String(disputaPonderada));
+    btn.textContent = disputaPonderada ? 'Lista padrão' : 'Ponderado por OD';
+    if (disputaPonderada) {
+      renderPonderadoNaTabela(rows);
+    } else {
+      restaurarDisputaPadrao();
+    }
   });
 }
 
