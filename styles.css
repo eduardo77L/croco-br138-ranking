@@ -187,6 +187,21 @@ button.btn-view[aria-pressed="true"] {
   color: var(--accent-deep);
 }
 
+/* Tamanho / OD / Média (e Aldeias / OD na lista padrão) */
+tbody td:nth-child(3),
+tbody td:nth-child(4),
+tbody td:nth-child(5),
+thead th:nth-child(3),
+thead th:nth-child(4),
+thead th:nth-child(5) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  min-width: 5rem;
+}
+
 .table-wrap {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -290,15 +305,6 @@ thead th:first-child:not([data-sort]) {
 
 tbody td:first-child {
   color: var(--ink-soft);
-}
-
-tbody td:nth-child(3),
-tbody td:nth-child(4),
-thead th:nth-child(3),
-thead th:nth-child(4) {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
 }
 
 td.empty {
