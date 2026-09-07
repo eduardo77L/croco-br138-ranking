@@ -4,6 +4,20 @@ Site estático com as listas **Classificados**, **Em disputa** e **Aceitar convi
 
 **Link público:** https://eduardo77L.github.io/croco-br138-ranking/
 
+## Regra importante: OD congelado
+
+O campo **`derrotados` (OD) não deve ser atualizado**. Ele ficou travado no valor da primeira coleta.
+
+Nas atualizações seguintes, mudamos **somente `aldeias`**.
+
+Para puxar aldeias novas do br138 sem mexer no OD:
+
+```bash
+node scripts/atualizar-aldeias.js
+```
+
+Depois: commit + push do `data.json`.
+
 ## Como editar a lista
 
 Abra `data.json` e altere as três listas:
@@ -22,15 +36,13 @@ Abra `data.json` e altere as três listas:
 | Campo | Significado |
 |-------|-------------|
 | `nome` | Nome no jogo |
-| `aldeias` | Quantidade de aldeias |
-| `derrotados` | Oponentes derrotados (OD) |
+| `aldeias` | Quantidade de aldeias (**atualizável**) |
+| `derrotados` | Oponentes derrotados / OD (**congelado**) |
 | `atualizadoEm` | Data exibida no topo (`YYYY-MM-DD`) |
-
-A página ordena cada lista por oponentes derrotados (maior primeiro).
 
 ## Como publicar
 
-1. Salve as alterações em `data.json`
+1. Salve as alterações em `data.json` (ou rode o script de aldeias)
 2. Commit e push na branch `main`
 3. Em ~1 minuto o GitHub Pages atualiza o link
 
