@@ -10,9 +10,10 @@ O campo **`derrotados` (OD) não deve ser atualizado**. Ele ficou travado no val
 
 Nas atualizações seguintes, mudamos **somente `aldeias`**.
 
-Para puxar aldeias novas do br138 sem mexer no OD:
+Para puxar aldeias novas do br138 sem mexer no OD, na pasta do projeto:
 
 ```bash
+cd croco-br138-ranking
 node scripts/atualizar-aldeias.js
 ```
 
