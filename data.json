@@ -87,6 +87,11 @@
       "derrotados": 161840000
     },
     {
+      "nome": "wladimor",
+      "aldeias": 669,
+      "derrotados": 157940341
+    },
+    {
       "nome": "Noke Destroyer",
       "aldeias": 1502,
       "derrotados": 157320000
@@ -137,13 +142,13 @@
       "derrotados": 128110000
     },
     {
-      "nome": "Kal El",
-      "aldeias": 674,
+      "nome": "CanudosOfWar",
+      "aldeias": 438,
       "derrotados": 108130000
     },
     {
-      "nome": "CanudosOfWar",
-      "aldeias": 438,
+      "nome": "Kal El",
+      "aldeias": 674,
       "derrotados": 108130000
     },
     {
@@ -195,14 +200,14 @@
       "nome": "Maconheira",
       "aldeias": 1024,
       "derrotados": 89080000
-    },
+    }
+  ],
+  "emDisputa": [
     {
       "nome": "mat-pro-sitio",
       "aldeias": 1258,
       "derrotados": 87510000
-    }
-  ],
-  "emDisputa": [
+    },
     {
       "nome": "D. Mihawk",
       "aldeias": 1087,
@@ -292,11 +297,6 @@
       "nome": "Murilex",
       "aldeias": 673,
       "derrotados": 51150060
-    },
-    {
-      "nome": "wladimor",
-      "aldeias": 669,
-      "derrotados": 157940341
     },
     {
       "nome": "Bylord",
