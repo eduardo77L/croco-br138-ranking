@@ -29,9 +29,9 @@ const THEAD_PONDERADO = `
   <tr>
     <th scope="col">#</th>
     <th scope="col">Nome</th>
-    <th scope="col">Rk aldeias</th>
-    <th scope="col">Rk OD</th>
-    <th scope="col">Pontos</th>
+    <th scope="col" title="Posição se ordenado só por aldeias (1 = maior)">Tamanho</th>
+    <th scope="col" title="Posição se ordenado só por OD (1 = maior)">OD</th>
+    <th scope="col" title="(Tamanho + OD) ÷ 2">Média</th>
   </tr>
 `;
 
@@ -148,25 +148,42 @@ function renderPonderadoNaTabela(rows) {
   }
 
   lista.forEach((j, i) => {
+    const media = formatPontos(j.pontos);
+    const conta = `${j.rankAldeias} + ${j.rankOd} → ${media}`;
     const tr = document.createElement('tr');
-    [
+    tr.title = conta;
+
+    const cells = [
       String(i + 1),
       j.nome,
       String(j.rankAldeias),
       String(j.rankOd),
-      formatPontos(j.pontos),
-    ].forEach((text) => {
+      media,
+    ];
+    cells.forEach((text, idx) => {
       const td = document.createElement('td');
       td.textContent = text;
+      if (idx === 4) {
+        td.className = 'col-media';
+        td.title = conta;
+      }
       tr.appendChild(td);
     });
     tbody.appendChild(tr);
   });
 }
 
+function setHintPonderado(visivel) {
+  const hint = document.getElementById('hint-ponderado');
+  if (!hint) return;
+  hint.hidden = !visivel;
+  hint.classList.toggle('is-hidden', !visivel);
+}
+
 function restaurarDisputaPadrao() {
   const thead = document.getElementById('thead-em-disputa');
   thead.innerHTML = THEAD_PADRAO;
+  setHintPonderado(false);
   ligarSort('emDisputa');
   renderLista('emDisputa');
 }
@@ -202,6 +219,7 @@ function ligarPonderado(rows) {
     btn.setAttribute('aria-pressed', String(disputaPonderada));
     btn.textContent = disputaPonderada ? 'Lista padrão' : 'Ponderado por OD';
     if (disputaPonderada) {
+      setHintPonderado(true);
       renderPonderadoNaTabela(rows);
     } else {
       restaurarDisputaPadrao();
