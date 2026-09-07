@@ -83,7 +83,7 @@ function listaPonderada(rows) {
       return { ...j, rankAldeias, rankOd, pontos };
     })
     .sort((a, b) => {
-      if (b.pontos !== a.pontos) return b.pontos - a.pontos;
+      if (a.pontos !== b.pontos) return a.pontos - b.pontos;
       return a.nome.localeCompare(b.nome, 'pt-BR');
     });
 }
