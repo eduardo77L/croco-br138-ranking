@@ -1,11 +1,499 @@
 {
   "atualizadoEm": "2026-09-07",
   "classificados": [
-    { "nome": "Exemplo Alpha", "aldeias": 18, "derrotados": 1500 },
-    { "nome": "Exemplo Beta", "aldeias": 9, "derrotados": 820 }
+    {
+      "nome": "-Exorcista",
+      "aldeias": 961,
+      "derrotados": 490934573
+    },
+    {
+      "nome": "QUICO BADERNEIRO",
+      "aldeias": 483,
+      "derrotados": 388875216
+    },
+    {
+      "nome": "killer95s",
+      "aldeias": 1619,
+      "derrotados": 361722746
+    },
+    {
+      "nome": "Mestre Dohko",
+      "aldeias": 2079,
+      "derrotados": 346951538
+    },
+    {
+      "nome": "-Goi",
+      "aldeias": 711,
+      "derrotados": 289639119
+    },
+    {
+      "nome": "ScarlletLady",
+      "aldeias": 571,
+      "derrotados": 269547702
+    },
+    {
+      "nome": "Chicago",
+      "aldeias": 735,
+      "derrotados": 263271262
+    },
+    {
+      "nome": "Aprendiztw",
+      "aldeias": 723,
+      "derrotados": 252521353
+    },
+    {
+      "nome": "Gohanzinho",
+      "aldeias": 1246,
+      "derrotados": 241867202
+    },
+    {
+      "nome": "korba4",
+      "aldeias": 2195,
+      "derrotados": 238011904
+    },
+    {
+      "nome": "Willlll29",
+      "aldeias": 731,
+      "derrotados": 199891446
+    },
+    {
+      "nome": "yKuhn",
+      "aldeias": 952,
+      "derrotados": 203687665
+    },
+    {
+      "nome": "- RiPaDo By Meta -",
+      "aldeias": 726,
+      "derrotados": 186117816
+    },
+    {
+      "nome": "JTZjunior",
+      "aldeias": 1167,
+      "derrotados": 191981342
+    },
+    {
+      "nome": "LaTiNoS",
+      "aldeias": 893,
+      "derrotados": 176978065
+    },
+    {
+      "nome": "Niihsan",
+      "aldeias": 976,
+      "derrotados": 191947522
+    },
+    {
+      "nome": "KILLER84",
+      "aldeias": 1097,
+      "derrotados": 168895601
+    },
+    {
+      "nome": "Noke Destroyer",
+      "aldeias": 1502,
+      "derrotados": 158058324
+    },
+    {
+      "nome": "FladiS0ouza",
+      "aldeias": 760,
+      "derrotados": 153118011
+    },
+    {
+      "nome": "Malvada Escorpiana",
+      "aldeias": 578,
+      "derrotados": 150360771
+    },
+    {
+      "nome": "- Bjorn Ironside",
+      "aldeias": 790,
+      "derrotados": 152180280
+    },
+    {
+      "nome": "Dxpedra",
+      "aldeias": 1122,
+      "derrotados": 157882903
+    },
+    {
+      "nome": "K A Z A K H S T A N",
+      "aldeias": 1245,
+      "derrotados": 149998809
+    },
+    {
+      "nome": "Spaltec",
+      "aldeias": 960,
+      "derrotados": 136954333
+    },
+    {
+      "nome": "tchapi na danada",
+      "aldeias": 1184,
+      "derrotados": 132559136
+    },
+    {
+      "nome": "Ed Great II",
+      "aldeias": 2157,
+      "derrotados": 131000255
+    },
+    {
+      "nome": "Tauba-San",
+      "aldeias": 1030,
+      "derrotados": 133189052
+    },
+    {
+      "nome": "Kal El",
+      "aldeias": 674,
+      "derrotados": 112151227
+    },
+    {
+      "nome": "CanudosOfWar",
+      "aldeias": 438,
+      "derrotados": 113977920
+    },
+    {
+      "nome": "Slashrose",
+      "aldeias": 1148,
+      "derrotados": 107094059
+    },
+    {
+      "nome": "Killer Rodigro",
+      "aldeias": 841,
+      "derrotados": 101727578
+    },
+    {
+      "nome": "Cillian Murphy",
+      "aldeias": 690,
+      "derrotados": 99799064
+    },
+    {
+      "nome": "Lorran Tribal",
+      "aldeias": 1086,
+      "derrotados": 107517358
+    },
+    {
+      "nome": "PAGANZERA",
+      "aldeias": 1323,
+      "derrotados": 105772331
+    },
+    {
+      "nome": "Pretoriano",
+      "aldeias": 609,
+      "derrotados": 95637744
+    },
+    {
+      "nome": "Gordotubarao",
+      "aldeias": 675,
+      "derrotados": 96631000
+    },
+    {
+      "nome": "Hosokawa",
+      "aldeias": 743,
+      "derrotados": 97558734
+    },
+    {
+      "nome": "George Washington",
+      "aldeias": 1030,
+      "derrotados": 94228795
+    },
+    {
+      "nome": "Maconheira",
+      "aldeias": 1023,
+      "derrotados": 94333618
+    },
+    {
+      "nome": "mat-pro-sitio",
+      "aldeias": 1254,
+      "derrotados": 93239333
+    }
   ],
   "emDisputa": [
-    { "nome": "Exemplo Gama", "aldeias": 7, "derrotados": 410 }
+    {
+      "nome": "D. Mihawk",
+      "aldeias": 1087,
+      "derrotados": 54761964
+    },
+    {
+      "nome": "Sevak",
+      "aldeias": 993,
+      "derrotados": 68484870
+    },
+    {
+      "nome": "Masterthief",
+      "aldeias": 1016,
+      "derrotados": 79082931
+    },
+    {
+      "nome": "CleitoRasta",
+      "aldeias": 919,
+      "derrotados": 82637959
+    },
+    {
+      "nome": "resgateiro",
+      "aldeias": 924,
+      "derrotados": 62971542
+    },
+    {
+      "nome": "gcoss",
+      "aldeias": 856,
+      "derrotados": 73061369
+    },
+    {
+      "nome": "Sir.Chini",
+      "aldeias": 790,
+      "derrotados": 55282182
+    },
+    {
+      "nome": "LordDrako",
+      "aldeias": 788,
+      "derrotados": 76906239
+    },
+    {
+      "nome": "ClaudioAndré",
+      "aldeias": 815,
+      "derrotados": 68915599
+    },
+    {
+      "nome": "UnBreath",
+      "aldeias": 773,
+      "derrotados": 64626654
+    },
+    {
+      "nome": "BAD BOYS REVENGE",
+      "aldeias": 796,
+      "derrotados": 78326066
+    },
+    {
+      "nome": "Serra Mortal",
+      "aldeias": 864,
+      "derrotados": 40198508
+    },
+    {
+      "nome": "Vardoleira",
+      "aldeias": 798,
+      "derrotados": 76585502
+    },
+    {
+      "nome": "brunomf14",
+      "aldeias": 751,
+      "derrotados": 62806595
+    },
+    {
+      "nome": "BetaTW",
+      "aldeias": 699,
+      "derrotados": 18213735
+    },
+    {
+      "nome": "Kenob",
+      "aldeias": 730,
+      "derrotados": 51825874
+    },
+    {
+      "nome": "Murilex",
+      "aldeias": 673,
+      "derrotados": 51150060
+    },
+    {
+      "nome": "mayconassmann",
+      "aldeias": 678,
+      "derrotados": 70841134
+    },
+    {
+      "nome": "Eduhahaha",
+      "aldeias": 653,
+      "derrotados": 53669020
+    },
+    {
+      "nome": "ImperadorRomano",
+      "aldeias": 651,
+      "derrotados": 36166163
+    },
+    {
+      "nome": "Dreknir",
+      "aldeias": 634,
+      "derrotados": 49488717
+    },
+    {
+      "nome": "navista",
+      "aldeias": 674,
+      "derrotados": 42990678
+    },
+    {
+      "nome": "Bylord",
+      "aldeias": 666,
+      "derrotados": 85080929
+    },
+    {
+      "nome": "jeff1996",
+      "aldeias": 592,
+      "derrotados": 48613390
+    },
+    {
+      "nome": "Enkei",
+      "aldeias": 599,
+      "derrotados": 33346869
+    },
+    {
+      "nome": "Theos",
+      "aldeias": 555,
+      "derrotados": 67111771
+    },
+    {
+      "nome": "Leo17Matador",
+      "aldeias": 587,
+      "derrotados": 61593550
+    },
+    {
+      "nome": "JLK09",
+      "aldeias": 522,
+      "derrotados": 78761341
+    },
+    {
+      "nome": "No Panic.",
+      "aldeias": 498,
+      "derrotados": 43916085
+    },
+    {
+      "nome": "ppngo",
+      "aldeias": 493,
+      "derrotados": 45892531
+    },
+    {
+      "nome": "Silva.s",
+      "aldeias": 453,
+      "derrotados": 48651701
+    },
+    {
+      "nome": "tsw1",
+      "aldeias": 459,
+      "derrotados": 34614975
+    }
   ],
-  "aceitarConvite": []
+  "aceitarConvite": [
+    {
+      "nome": "PARA",
+      "aldeias": 574,
+      "derrotados": 55560682
+    },
+    {
+      "nome": "lesj",
+      "aldeias": 413,
+      "derrotados": 41195253
+    },
+    {
+      "nome": "Chivunk",
+      "aldeias": 469,
+      "derrotados": 19153458
+    },
+    {
+      "nome": "Dyow",
+      "aldeias": 449,
+      "derrotados": 18909689
+    },
+    {
+      "nome": "ViníciuS",
+      "aldeias": 358,
+      "derrotados": 20653202
+    },
+    {
+      "nome": "eluigiii",
+      "aldeias": 311,
+      "derrotados": 52092997
+    },
+    {
+      "nome": "Zairos1992",
+      "aldeias": 299,
+      "derrotados": 212948
+    },
+    {
+      "nome": "Arqueiro Azul",
+      "aldeias": 245,
+      "derrotados": 16432820
+    },
+    {
+      "nome": "Abutre solo",
+      "aldeias": 245,
+      "derrotados": 26125682
+    },
+    {
+      "nome": "The old Lorde King",
+      "aldeias": 249,
+      "derrotados": 14366208
+    },
+    {
+      "nome": "Rei Inep",
+      "aldeias": 184,
+      "derrotados": 19728199
+    },
+    {
+      "nome": "Annakin",
+      "aldeias": 218,
+      "derrotados": 34951967
+    },
+    {
+      "nome": "-Dinasty-",
+      "aldeias": 215,
+      "derrotados": 15758275
+    },
+    {
+      "nome": "abimael18",
+      "aldeias": 183,
+      "derrotados": 22615287
+    },
+    {
+      "nome": "I am holker",
+      "aldeias": 175,
+      "derrotados": 46898537
+    },
+    {
+      "nome": "Dakarai",
+      "aldeias": 171,
+      "derrotados": 49343829
+    },
+    {
+      "nome": "Rei cjunior",
+      "aldeias": 113,
+      "derrotados": 5247268
+    },
+    {
+      "nome": "Tami",
+      "aldeias": 81,
+      "derrotados": 16045637
+    },
+    {
+      "nome": "Daniel Comunista",
+      "aldeias": 62,
+      "derrotados": 2041934
+    },
+    {
+      "nome": "Senhor PAPAI",
+      "aldeias": 50,
+      "derrotados": 0
+    },
+    {
+      "nome": "Big Boss",
+      "aldeias": 49,
+      "derrotados": 6086241
+    },
+    {
+      "nome": "Crockz0r",
+      "aldeias": 25,
+      "derrotados": 63348591
+    },
+    {
+      "nome": "clandestino15",
+      "aldeias": 25,
+      "derrotados": 63865206
+    },
+    {
+      "nome": "Grotesca",
+      "aldeias": 22,
+      "derrotados": 7177009
+    },
+    {
+      "nome": "sorhento",
+      "aldeias": 20,
+      "derrotados": 1425195
+    },
+    {
+      "nome": "longmessa",
+      "aldeias": 6,
+      "derrotados": 1505046
+    }
+  ]
 }

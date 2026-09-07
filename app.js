@@ -19,7 +19,13 @@ function renderLista(tbody, lista) {
   }
   ordenarJogadores(lista).forEach((j, i) => {
     const tr = document.createElement('tr');
-    [String(i + 1), j.nome, String(j.aldeias), String(j.derrotados)].forEach((text) => {
+    const cells = [
+      String(i + 1),
+      j.nome,
+      Number(j.aldeias).toLocaleString('pt-BR'),
+      Number(j.derrotados).toLocaleString('pt-BR'),
+    ];
+    cells.forEach((text) => {
       const td = document.createElement('td');
       td.textContent = text;
       tr.appendChild(td);
