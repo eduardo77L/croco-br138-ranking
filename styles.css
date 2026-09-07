@@ -120,11 +120,50 @@ main section {
 }
 
 main section h2 {
-  margin: 0 0 0.7rem;
+  margin: 0;
   font-family: var(--font-display);
   font-size: clamp(1.35rem, 2vw, 1.75rem);
   letter-spacing: 0.04em;
   color: var(--accent-deep);
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+  min-height: 2rem;
+}
+
+.btn-view {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--accent-deep);
+  border-radius: 4px;
+  background: rgba(61, 90, 36, 0.1);
+  color: var(--accent-deep);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-view:hover {
+  background: rgba(61, 90, 36, 0.22);
+}
+
+.btn-view[aria-pressed="true"] {
+  background: var(--accent-deep);
+  color: #f3f0e4;
+}
+
+.table-wrap.is-hidden {
+  display: none;
 }
 
 .table-wrap {

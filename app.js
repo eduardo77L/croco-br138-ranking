@@ -28,7 +28,6 @@ function comparar(a, b, sortBy, dir) {
     if (a.aldeias !== b.aldeias) return mul * (a.aldeias - b.aldeias);
     return a.nome.localeCompare(b.nome, 'pt-BR');
   }
-  // derrotados (OD) — also used when sortBy === 'ranking' via defaultSort mapping
   if (a.derrotados !== b.derrotados) return mul * (a.derrotados - b.derrotados);
   if (a.aldeias !== b.aldeias) return mul * (a.aldeias - b.aldeias);
   return a.nome.localeCompare(b.nome, 'pt-BR');
@@ -37,6 +36,36 @@ function comparar(a, b, sortBy, dir) {
 function ordenar(rows, sortBy, dir, defaultSort) {
   const campo = sortBy === 'ranking' ? defaultSort : sortBy;
   return [...rows].sort((a, b) => comparar(a, b, campo, dir));
+}
+
+function ranksPorCampo(rows, campo) {
+  const ordenados = [...rows].sort((a, b) => {
+    if (b[campo] !== a[campo]) return b[campo] - a[campo];
+    return a.nome.localeCompare(b.nome, 'pt-BR');
+  });
+  const mapa = new Map();
+  ordenados.forEach((j, i) => mapa.set(j.nome, i + 1));
+  return mapa;
+}
+
+function formatPontos(n) {
+  return Number.isInteger(n) ? String(n) : n.toLocaleString('pt-BR', { maximumFractionDigits: 1 });
+}
+
+function listaPonderada(rows) {
+  const rkAldeias = ranksPorCampo(rows, 'aldeias');
+  const rkOd = ranksPorCampo(rows, 'derrotados');
+  return rows
+    .map((j) => {
+      const rankAldeias = rkAldeias.get(j.nome);
+      const rankOd = rkOd.get(j.nome);
+      const pontos = (rankAldeias + rankOd) / 2;
+      return { ...j, rankAldeias, rankOd, pontos };
+    })
+    .sort((a, b) => {
+      if (b.pontos !== a.pontos) return b.pontos - a.pontos;
+      return a.nome.localeCompare(b.nome, 'pt-BR');
+    });
 }
 
 function renderLista(id) {
@@ -79,6 +108,39 @@ function renderLista(id) {
   });
 }
 
+function renderPonderado(rows) {
+  const tbody = document.getElementById('tbody-em-disputa-ponderado');
+  tbody.replaceChildren();
+  const lista = listaPonderada(rows);
+
+  if (!lista.length) {
+    const tr = document.createElement('tr');
+    const td = document.createElement('td');
+    td.colSpan = 5;
+    td.className = 'empty';
+    td.textContent = 'Nenhum jogador nesta lista';
+    tr.appendChild(td);
+    tbody.appendChild(tr);
+    return;
+  }
+
+  lista.forEach((j, i) => {
+    const tr = document.createElement('tr');
+    [
+      String(i + 1),
+      j.nome,
+      String(j.rankAldeias),
+      String(j.rankOd),
+      formatPontos(j.pontos),
+    ].forEach((text) => {
+      const td = document.createElement('td');
+      td.textContent = text;
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+}
+
 function ligarSort(id) {
   const s = state[id];
   s.table.querySelectorAll('th[data-sort]').forEach((th) => {
@@ -92,6 +154,26 @@ function ligarSort(id) {
       }
       renderLista(id);
     });
+  });
+}
+
+function ligarPonderado(rows) {
+  const btn = document.getElementById('btn-ponderado');
+  const viewPadrao = document.getElementById('view-disputa-padrao');
+  const viewPonderado = document.getElementById('view-disputa-ponderado');
+  if (!btn || !viewPadrao || !viewPonderado) return;
+
+  renderPonderado(rows);
+
+  btn.addEventListener('click', () => {
+    const ativo = btn.getAttribute('aria-pressed') === 'true';
+    const proximo = !ativo;
+    btn.setAttribute('aria-pressed', String(proximo));
+    btn.textContent = proximo ? 'Lista padrão' : 'Ponderado por OD';
+    viewPadrao.hidden = proximo;
+    viewPonderado.hidden = !proximo;
+    viewPadrao.classList.toggle('is-hidden', proximo);
+    viewPonderado.classList.toggle('is-hidden', !proximo);
   });
 }
 
@@ -116,6 +198,8 @@ async function main() {
     ligarSort(cfg.key);
     renderLista(cfg.key);
   }
+
+  ligarPonderado(data.emDisputa || []);
 }
 
 main().catch((err) => {
