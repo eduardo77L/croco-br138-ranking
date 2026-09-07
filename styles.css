@@ -1,0 +1,184 @@
+:root {
+  --bg-deep: #1a2418;
+  --bg-mid: #243022;
+  --bg-panel: rgba(232, 228, 210, 0.94);
+  --ink: #1c2118;
+  --ink-soft: #4a5344;
+  --line: rgba(28, 33, 24, 0.14);
+  --accent: #6b8f3c;
+  --accent-deep: #3d5a24;
+  --danger: #8b2e2e;
+  --font-display: "Bebas Neue", "Arial Narrow", sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse 120% 80% at 10% -10%, rgba(107, 143, 60, 0.35), transparent 55%),
+    radial-gradient(ellipse 90% 60% at 100% 20%, rgba(61, 90, 36, 0.4), transparent 50%),
+    linear-gradient(165deg, var(--bg-deep) 0%, var(--bg-mid) 45%, #1f2a1c 100%);
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: repeating-linear-gradient(
+    -18deg,
+    transparent,
+    transparent 11px,
+    rgba(255, 255, 255, 0.35) 11px,
+    rgba(255, 255, 255, 0.35) 12px
+  );
+}
+
+.page {
+  position: relative;
+  width: min(920px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 3.5rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  padding: 1.75rem 1.5rem 1.5rem;
+  background: var(--bg-panel);
+  border-bottom: 4px solid var(--accent-deep);
+}
+
+.brand {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 6vw, 3.25rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.meta {
+  margin: 0.85rem 0 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+main section {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 1.25rem 1rem;
+  background: var(--bg-panel);
+}
+
+main section h2 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  letter-spacing: 0.04em;
+  color: var(--accent-deep);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+thead th {
+  text-align: left;
+  padding: 0.55rem 0.65rem;
+  border-bottom: 2px solid var(--accent-deep);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 0.65rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+tbody tr:nth-child(even) td {
+  background: rgba(61, 90, 36, 0.06);
+}
+
+tbody td:first-child,
+thead th:first-child {
+  width: 2.5rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+}
+
+tbody td:nth-child(3),
+tbody td:nth-child(4),
+thead th:nth-child(3),
+thead th:nth-child(4) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+td.empty {
+  text-align: center;
+  color: var(--ink-soft);
+  font-style: italic;
+  padding: 1.1rem 0.65rem;
+}
+
+.error {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  background: #f8e8e8;
+  color: var(--danger);
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .page {
+    width: calc(100% - 1rem);
+    padding-top: 1.25rem;
+  }
+
+  .hero,
+  main section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  table {
+    font-size: 0.92rem;
+  }
+}
