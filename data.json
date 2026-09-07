@@ -209,19 +209,14 @@
       "derrotados": 54761964
     },
     {
-      "nome": "Sevak",
-      "aldeias": 993,
-      "derrotados": 68484870
-    },
-    {
       "nome": "Masterthief",
       "aldeias": 1018,
       "derrotados": 79082931
     },
     {
-      "nome": "CleitoRasta",
-      "aldeias": 919,
-      "derrotados": 82637959
+      "nome": "Sevak",
+      "aldeias": 993,
+      "derrotados": 68484870
     },
     {
       "nome": "resgateiro",
@@ -229,34 +224,9 @@
       "derrotados": 62971542
     },
     {
-      "nome": "gcoss",
-      "aldeias": 857,
-      "derrotados": 73061369
-    },
-    {
-      "nome": "Sir.Chini",
-      "aldeias": 790,
-      "derrotados": 55282182
-    },
-    {
-      "nome": "LordDrako",
-      "aldeias": 791,
-      "derrotados": 76906239
-    },
-    {
-      "nome": "ClaudioAndré",
-      "aldeias": 816,
-      "derrotados": 68915599
-    },
-    {
-      "nome": "UnBreath",
-      "aldeias": 772,
-      "derrotados": 64626654
-    },
-    {
-      "nome": "BAD BOYS REVENGE",
-      "aldeias": 797,
-      "derrotados": 78326066
+      "nome": "CleitoRasta",
+      "aldeias": 919,
+      "derrotados": 82637959
     },
     {
       "nome": "Serra Mortal",
@@ -264,9 +234,39 @@
       "derrotados": 40198508
     },
     {
+      "nome": "gcoss",
+      "aldeias": 857,
+      "derrotados": 73061369
+    },
+    {
+      "nome": "ClaudioAndré",
+      "aldeias": 816,
+      "derrotados": 68915599
+    },
+    {
       "nome": "Vardoleira",
       "aldeias": 800,
       "derrotados": 76585502
+    },
+    {
+      "nome": "BAD BOYS REVENGE",
+      "aldeias": 797,
+      "derrotados": 78326066
+    },
+    {
+      "nome": "LordDrako",
+      "aldeias": 791,
+      "derrotados": 76906239
+    },
+    {
+      "nome": "Sir.Chini",
+      "aldeias": 790,
+      "derrotados": 55282182
+    },
+    {
+      "nome": "UnBreath",
+      "aldeias": 772,
+      "derrotados": 64626654
     },
     {
       "nome": "brunomf14",
@@ -279,14 +279,29 @@
       "derrotados": 51825874
     },
     {
+      "nome": "mayconassmann",
+      "aldeias": 678,
+      "derrotados": 70841134
+    },
+    {
+      "nome": "navista",
+      "aldeias": 674,
+      "derrotados": 42990678
+    },
+    {
       "nome": "Murilex",
       "aldeias": 673,
       "derrotados": 51150060
     },
     {
-      "nome": "mayconassmann",
-      "aldeias": 678,
-      "derrotados": 70841134
+      "nome": "wladimor",
+      "aldeias": 669,
+      "derrotados": 157940341
+    },
+    {
+      "nome": "Bylord",
+      "aldeias": 667,
+      "derrotados": 85080929
     },
     {
       "nome": "Eduhahaha",
@@ -304,14 +319,9 @@
       "derrotados": 49488717
     },
     {
-      "nome": "navista",
-      "aldeias": 674,
-      "derrotados": 42990678
-    },
-    {
-      "nome": "Bylord",
-      "aldeias": 667,
-      "derrotados": 85080929
+      "nome": "Enkei",
+      "aldeias": 599,
+      "derrotados": 33346869
     },
     {
       "nome": "jeff1996",
@@ -319,19 +329,14 @@
       "derrotados": 48613390
     },
     {
-      "nome": "Enkei",
-      "aldeias": 599,
-      "derrotados": 33346869
+      "nome": "Leo17Matador",
+      "aldeias": 587,
+      "derrotados": 61593550
     },
     {
       "nome": "Theos",
       "aldeias": 557,
       "derrotados": 67111771
-    },
-    {
-      "nome": "Leo17Matador",
-      "aldeias": 587,
-      "derrotados": 61593550
     },
     {
       "nome": "JLK09",
@@ -349,14 +354,19 @@
       "derrotados": 45892531
     },
     {
-      "nome": "Silva.s",
-      "aldeias": 453,
-      "derrotados": 48651701
+      "nome": "Rafa787",
+      "aldeias": 487,
+      "derrotados": 42189867
     },
     {
       "nome": "tsw1",
       "aldeias": 462,
       "derrotados": 34614975
+    },
+    {
+      "nome": "Silva.s",
+      "aldeias": 453,
+      "derrotados": 48651701
     }
   ],
   "aceitarConvite": [
