@@ -52,19 +52,14 @@
       "derrotados": 238011904
     },
     {
-      "nome": "Willlll29",
-      "aldeias": 734,
-      "derrotados": 199891446
-    },
-    {
       "nome": "yKuhn",
       "aldeias": 954,
       "derrotados": 203687665
     },
     {
-      "nome": "- RiPaDo By Meta -",
-      "aldeias": 726,
-      "derrotados": 186117816
+      "nome": "Willlll29",
+      "aldeias": 734,
+      "derrotados": 199891446
     },
     {
       "nome": "JTZjunior",
@@ -72,14 +67,19 @@
       "derrotados": 191981342
     },
     {
-      "nome": "LaTiNoS",
-      "aldeias": 895,
-      "derrotados": 176978065
-    },
-    {
       "nome": "Niihsan",
       "aldeias": 976,
       "derrotados": 191947522
+    },
+    {
+      "nome": "- RiPaDo By Meta -",
+      "aldeias": 726,
+      "derrotados": 186117816
+    },
+    {
+      "nome": "LaTiNoS",
+      "aldeias": 895,
+      "derrotados": 176978065
     },
     {
       "nome": "KILLER84",
@@ -92,14 +92,19 @@
       "derrotados": 158058324
     },
     {
+      "nome": "wladimor",
+      "aldeias": 669,
+      "derrotados": 157940341
+    },
+    {
+      "nome": "Dxpedra",
+      "aldeias": 1122,
+      "derrotados": 157882903
+    },
+    {
       "nome": "FladiS0ouza",
       "aldeias": 760,
       "derrotados": 153118011
-    },
-    {
-      "nome": "Malvada Escorpiana",
-      "aldeias": 578,
-      "derrotados": 150360771
     },
     {
       "nome": "- Bjorn Ironside",
@@ -107,9 +112,9 @@
       "derrotados": 152180280
     },
     {
-      "nome": "Dxpedra",
-      "aldeias": 1122,
-      "derrotados": 157882903
+      "nome": "Malvada Escorpiana",
+      "aldeias": 578,
+      "derrotados": 150360771
     },
     {
       "nome": "K A Z A K H S T A N",
@@ -122,6 +127,11 @@
       "derrotados": 136954333
     },
     {
+      "nome": "Tauba-San",
+      "aldeias": 1030,
+      "derrotados": 133189052
+    },
+    {
       "nome": "tchapi na danada",
       "aldeias": 1184,
       "derrotados": 132559136
@@ -132,9 +142,9 @@
       "derrotados": 131000255
     },
     {
-      "nome": "Tauba-San",
-      "aldeias": 1030,
-      "derrotados": 133189052
+      "nome": "CanudosOfWar",
+      "aldeias": 438,
+      "derrotados": 113977920
     },
     {
       "nome": "Kal El",
@@ -142,14 +152,19 @@
       "derrotados": 112151227
     },
     {
-      "nome": "CanudosOfWar",
-      "aldeias": 438,
-      "derrotados": 113977920
+      "nome": "Lorran Tribal",
+      "aldeias": 1086,
+      "derrotados": 107517358
     },
     {
       "nome": "Slashrose",
       "aldeias": 1148,
       "derrotados": 107094059
+    },
+    {
+      "nome": "PAGANZERA",
+      "aldeias": 1323,
+      "derrotados": 105772331
     },
     {
       "nome": "Killer Rodigro",
@@ -162,19 +177,9 @@
       "derrotados": 99799064
     },
     {
-      "nome": "Lorran Tribal",
-      "aldeias": 1086,
-      "derrotados": 107517358
-    },
-    {
-      "nome": "PAGANZERA",
-      "aldeias": 1323,
-      "derrotados": 105772331
-    },
-    {
-      "nome": "Pretoriano",
-      "aldeias": 613,
-      "derrotados": 95637744
+      "nome": "Hosokawa",
+      "aldeias": 743,
+      "derrotados": 97558734
     },
     {
       "nome": "Gordotubarao",
@@ -182,14 +187,9 @@
       "derrotados": 96631000
     },
     {
-      "nome": "Hosokawa",
-      "aldeias": 743,
-      "derrotados": 97558734
-    },
-    {
-      "nome": "George Washington",
-      "aldeias": 1031,
-      "derrotados": 94228795
+      "nome": "Pretoriano",
+      "aldeias": 613,
+      "derrotados": 95637744
     },
     {
       "nome": "Maconheira",
@@ -197,12 +197,17 @@
       "derrotados": 94333618
     },
     {
-      "nome": "mat-pro-sitio",
-      "aldeias": 1258,
-      "derrotados": 93239333
+      "nome": "George Washington",
+      "aldeias": 1031,
+      "derrotados": 94228795
     }
   ],
   "emDisputa": [
+    {
+      "nome": "mat-pro-sitio",
+      "aldeias": 1258,
+      "derrotados": 93239333
+    },
     {
       "nome": "D. Mihawk",
       "aldeias": 1087,
@@ -292,11 +297,6 @@
       "nome": "Murilex",
       "aldeias": 673,
       "derrotados": 51150060
-    },
-    {
-      "nome": "wladimor",
-      "aldeias": 669,
-      "derrotados": 157940341
     },
     {
       "nome": "Bylord",
