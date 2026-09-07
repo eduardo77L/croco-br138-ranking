@@ -63,9 +63,10 @@ function renderLista(id) {
   }
 
   ordenar(rows, sortBy, dir, defaultSort).forEach((j, i) => {
+    const posicao = dir === 'asc' ? rows.length - i : i + 1;
     const tr = document.createElement('tr');
     [
-      String(i + 1),
+      String(posicao),
       j.nome,
       Number(j.aldeias).toLocaleString('pt-BR'),
       Number(j.derrotados).toLocaleString('pt-BR'),
