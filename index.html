@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Croco br138 - Ranking de classificados + disputa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <p class="brand">Croco · br138</p>
+        <h1>Croco br138 - Ranking de classificados + disputa</h1>
+        <p id="atualizadoEm" class="meta">Carregando…</p>
+      </header>
+
+      <main>
+        <section aria-labelledby="h-classificados">
+          <h2 id="h-classificados">Classificados</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Aldeias</th>
+                  <th scope="col">Oponentes derrotados</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-classificados"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section aria-labelledby="h-disputa">
+          <h2 id="h-disputa">Em disputa</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Aldeias</th>
+                  <th scope="col">Oponentes derrotados</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-em-disputa"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section aria-labelledby="h-convite">
+          <h2 id="h-convite">Aceitar convite</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Aldeias</th>
+                  <th scope="col">Oponentes derrotados</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-aceitar-convite"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

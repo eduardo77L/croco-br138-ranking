@@ -1,0 +1,11 @@
+{
+  "atualizadoEm": "2026-09-07",
+  "classificados": [
+    { "nome": "Exemplo Alpha", "aldeias": 18, "derrotados": 1500 },
+    { "nome": "Exemplo Beta", "aldeias": 9, "derrotados": 820 }
+  ],
+  "emDisputa": [
+    { "nome": "Exemplo Gama", "aldeias": 7, "derrotados": 410 }
+  ],
+  "aceitarConvite": []
+}
