@@ -1,13 +1,57 @@
-function ordenarJogadores(lista) {
-  return [...lista].sort((a, b) => {
-    if (b.derrotados !== a.derrotados) return b.derrotados - a.derrotados;
+const LISTAS = [
+  {
+    key: 'classificados',
+    tbody: 'tbody-classificados',
+    defaultSort: 'derrotados',
+  },
+  {
+    key: 'emDisputa',
+    tbody: 'tbody-em-disputa',
+    defaultSort: 'aldeias',
+  },
+  {
+    key: 'aceitarConvite',
+    tbody: 'tbody-aceitar-convite',
+    defaultSort: 'aldeias',
+  },
+];
+
+/** @type {Record<string, { rows: Array<{nome:string,aldeias:number,derrotados:number}>, sortBy: string, dir: 'asc'|'desc', defaultSort: string, tbody: HTMLElement, table: HTMLTableElement }>} */
+const state = {};
+
+function comparar(a, b, sortBy, dir) {
+  const mul = dir === 'asc' ? 1 : -1;
+  if (sortBy === 'nome') {
+    return mul * a.nome.localeCompare(b.nome, 'pt-BR');
+  }
+  if (sortBy === 'aldeias') {
+    if (a.aldeias !== b.aldeias) return mul * (a.aldeias - b.aldeias);
     return a.nome.localeCompare(b.nome, 'pt-BR');
-  });
+  }
+  // derrotados (OD) — also used when sortBy === 'ranking' via defaultSort mapping
+  if (a.derrotados !== b.derrotados) return mul * (a.derrotados - b.derrotados);
+  if (a.aldeias !== b.aldeias) return mul * (a.aldeias - b.aldeias);
+  return a.nome.localeCompare(b.nome, 'pt-BR');
 }
 
-function renderLista(tbody, lista) {
+function ordenar(rows, sortBy, dir, defaultSort) {
+  const campo = sortBy === 'ranking' ? defaultSort : sortBy;
+  return [...rows].sort((a, b) => comparar(a, b, campo, dir));
+}
+
+function renderLista(id) {
+  const s = state[id];
+  const { tbody, rows, sortBy, dir, defaultSort, table } = s;
   tbody.replaceChildren();
-  if (!lista.length) {
+
+  table.querySelectorAll('th[data-sort]').forEach((th) => {
+    const active = th.dataset.sort === sortBy;
+    th.classList.toggle('is-active', active);
+    th.dataset.dir = active ? dir : '';
+    th.setAttribute('aria-sort', active ? (dir === 'asc' ? 'ascending' : 'descending') : 'none');
+  });
+
+  if (!rows.length) {
     const tr = document.createElement('tr');
     const td = document.createElement('td');
     td.colSpan = 4;
@@ -17,20 +61,36 @@ function renderLista(tbody, lista) {
     tbody.appendChild(tr);
     return;
   }
-  ordenarJogadores(lista).forEach((j, i) => {
+
+  ordenar(rows, sortBy, dir, defaultSort).forEach((j, i) => {
     const tr = document.createElement('tr');
-    const cells = [
+    [
       String(i + 1),
       j.nome,
       Number(j.aldeias).toLocaleString('pt-BR'),
       Number(j.derrotados).toLocaleString('pt-BR'),
-    ];
-    cells.forEach((text) => {
+    ].forEach((text) => {
       const td = document.createElement('td');
       td.textContent = text;
       tr.appendChild(td);
     });
     tbody.appendChild(tr);
+  });
+}
+
+function ligarSort(id) {
+  const s = state[id];
+  s.table.querySelectorAll('th[data-sort]').forEach((th) => {
+    th.addEventListener('click', () => {
+      const next = th.dataset.sort;
+      if (s.sortBy === next) {
+        s.dir = s.dir === 'desc' ? 'asc' : 'desc';
+      } else {
+        s.sortBy = next;
+        s.dir = 'desc';
+      }
+      renderLista(id);
+    });
   });
 }
 
@@ -40,9 +100,21 @@ async function main() {
   const data = await res.json();
   const el = document.getElementById('atualizadoEm');
   if (el) el.textContent = `Atualizado em ${data.atualizadoEm}`;
-  renderLista(document.getElementById('tbody-classificados'), data.classificados || []);
-  renderLista(document.getElementById('tbody-em-disputa'), data.emDisputa || []);
-  renderLista(document.getElementById('tbody-aceitar-convite'), data.aceitarConvite || []);
+
+  for (const cfg of LISTAS) {
+    const tbody = document.getElementById(cfg.tbody);
+    const table = tbody.closest('table');
+    state[cfg.key] = {
+      rows: data[cfg.key] || [],
+      sortBy: 'ranking',
+      dir: 'desc',
+      defaultSort: cfg.defaultSort,
+      tbody,
+      table,
+    };
+    ligarSort(cfg.key);
+    renderLista(cfg.key);
+  }
 }
 
 main().catch((err) => {

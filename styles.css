@@ -131,6 +131,28 @@ thead th {
   white-space: nowrap;
 }
 
+thead th[data-sort] {
+  cursor: pointer;
+  user-select: none;
+}
+
+thead th[data-sort]:hover {
+  color: var(--accent-deep);
+}
+
+thead th[data-sort].is-active {
+  color: var(--accent-deep);
+}
+
+thead th[data-sort].is-active::after {
+  content: " ▾";
+  font-size: 0.75em;
+}
+
+thead th[data-sort].is-active[data-dir="asc"]::after {
+  content: " ▴";
+}
+
 tbody td {
   padding: 0.4rem;
   border-bottom: 1px solid var(--line);
