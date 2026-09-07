@@ -274,11 +274,6 @@
       "derrotados": 62806595
     },
     {
-      "nome": "BetaTW",
-      "aldeias": 699,
-      "derrotados": 18213735
-    },
-    {
       "nome": "Kenob",
       "aldeias": 730,
       "derrotados": 51825874
@@ -494,6 +489,11 @@
       "nome": "longmessa",
       "aldeias": 6,
       "derrotados": 1505046
+    },
+    {
+      "nome": "BetaTW",
+      "aldeias": 699,
+      "derrotados": 18213735
     }
   ]
 }
