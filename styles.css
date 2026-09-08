@@ -171,6 +171,22 @@ button.btn-view[aria-pressed="true"] {
   border-color: var(--accent-deep);
 }
 
+.dominancia {
+  margin: 0;
+  flex-shrink: 0;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(61, 90, 36, 0.35);
+  border-radius: 6px;
+  background: rgba(61, 90, 36, 0.1);
+  color: var(--accent-deep);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .view-hint {
   margin: -0.25rem 0 0.75rem;
   font-size: 0.82rem;

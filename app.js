@@ -234,6 +234,14 @@ async function main() {
   const el = document.getElementById('atualizadoEm');
   if (el) el.textContent = `Atualizado em ${data.atualizadoEm}`;
 
+  const dom = document.getElementById('dominancia');
+  if (dom && data.dominancia != null) {
+    const pct = Number(data.dominancia).toLocaleString('pt-BR', {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1,
+    });
+    dom.textContent = `Dominância: ${pct}%`;
+  }
   for (const cfg of LISTAS) {
     const tbody = document.getElementById(cfg.tbody);
     const table = tbody.closest('table');
