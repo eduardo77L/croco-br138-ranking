@@ -13,7 +13,6 @@ const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data.json');
 const PLAYER_URL = 'https://br138.tribalwars.com.br/map/player.txt';
 const ALLY_URL = 'https://br138.tribalwars.com.br/map/ally.txt';
-const VILLAGE_URL = 'https://br138.tribalwars.com.br/map/village.txt';
 const CROCO_TAG = 'Croco';
 
 function fetchText(url) {
@@ -52,28 +51,38 @@ function hoje() {
   return `${y}-${m}-${day}`;
 }
 
-function loadCrocoDominance(allyText, villageText) {
-  let crocoVillages = 0;
+function loadCrocoDominance(allyText, playerText) {
+  let crocoId = null;
   for (const line of allyText.trim().split(/\n/)) {
     if (!line) continue;
-    const [, , tag, , villages] = line.split(',');
+    const [id, , tag] = line.split(',');
     const decoded = decodeURIComponent(tag.replace(/\+/g, ' '));
     if (decoded === CROCO_TAG) {
-      crocoVillages = Number(villages);
+      crocoId = Number(id);
       break;
     }
   }
-  const totalVillages = villageText.trim().split(/\n/).filter(Boolean).length;
-  if (!crocoVillages || !totalVillages) return null;
-  return Math.round((crocoVillages / totalVillages) * 1000) / 10;
+  if (crocoId == null) return null;
+
+  let crocoVillages = 0;
+  let totalVillages = 0;
+  for (const line of playerText.trim().split(/\n/)) {
+    if (!line) continue;
+    const [, , allyId, villages] = line.split(',');
+    const v = Number(villages) || 0;
+    totalVillages += v;
+    if (Number(allyId) === crocoId) crocoVillages += v;
+  }
+  if (!totalVillages) return null;
+  // Mesma base da tela ranking → mode=dominance (~39,34%)
+  return Math.round((crocoVillages / totalVillages) * 10000) / 100;
 }
 
 async function main() {
   const data = JSON.parse(fs.readFileSync(DATA, 'utf8'));
-  const [playerText, allyText, villageText] = await Promise.all([
+  const [playerText, allyText] = await Promise.all([
     fetchText(PLAYER_URL),
     fetchText(ALLY_URL),
-    fetchText(VILLAGE_URL),
   ]);
   const players = loadPlayers(playerText);
   const listas = ['classificados', 'emDisputa', 'aceitarConvite'];
@@ -95,7 +104,7 @@ async function main() {
     }
   }
 
-  const dominancia = loadCrocoDominance(allyText, villageText);
+  const dominancia = loadCrocoDominance(allyText, playerText);
   if (dominancia != null) data.dominancia = dominancia;
 
   data.atualizadoEm = hoje();

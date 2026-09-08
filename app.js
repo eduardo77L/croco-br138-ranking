@@ -237,8 +237,8 @@ async function main() {
   const dom = document.getElementById('dominancia');
   if (dom && data.dominancia != null) {
     const pct = Number(data.dominancia).toLocaleString('pt-BR', {
-      minimumFractionDigits: 1,
-      maximumFractionDigits: 1,
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
     });
     dom.textContent = `Dominância: ${pct}%`;
   }
