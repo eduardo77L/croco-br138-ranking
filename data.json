@@ -294,11 +294,6 @@
       "derrotados": 85080929
     },
     {
-      "nome": "Eduhahaha",
-      "aldeias": 670,
-      "derrotados": 53669020
-    },
-    {
       "nome": "Leo17Matador",
       "aldeias": 628,
       "derrotados": 61593550
@@ -310,6 +305,11 @@
     }
   ],
   "aceitarConvite": [
+    {
+      "nome": "Eduhahaha",
+      "aldeias": 670,
+      "derrotados": 53669020
+    },
     {
       "nome": "loyrap",
       "aldeias": 489,
