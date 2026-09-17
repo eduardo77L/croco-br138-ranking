@@ -307,14 +307,14 @@
       "nome": "Theos",
       "aldeias": 610,
       "derrotados": 67111771
-    },
+    }
+  ],
+  "aceitarConvite": [
     {
       "nome": "loyrap",
       "aldeias": 489,
       "derrotados": 70014832
-    }
-  ],
-  "aceitarConvite": [
+    },
     {
       "nome": "Kenob",
       "aldeias": 791,
