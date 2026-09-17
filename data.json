@@ -279,19 +279,9 @@
       "derrotados": 62806595
     },
     {
-      "nome": "Kenob",
-      "aldeias": 791,
-      "derrotados": 51825874
-    },
-    {
       "nome": "mayconassmann",
       "aldeias": 736,
       "derrotados": 70841134
-    },
-    {
-      "nome": "navista",
-      "aldeias": 700,
-      "derrotados": 42990678
     },
     {
       "nome": "Murilex",
@@ -307,6 +297,33 @@
       "nome": "Eduhahaha",
       "aldeias": 670,
       "derrotados": 53669020
+    },
+    {
+      "nome": "Leo17Matador",
+      "aldeias": 628,
+      "derrotados": 61593550
+    },
+    {
+      "nome": "Theos",
+      "aldeias": 610,
+      "derrotados": 67111771
+    },
+    {
+      "nome": "loyrap",
+      "aldeias": 489,
+      "derrotados": 70014832
+    }
+  ],
+  "aceitarConvite": [
+    {
+      "nome": "Kenob",
+      "aldeias": 791,
+      "derrotados": 51825874
+    },
+    {
+      "nome": "navista",
+      "aldeias": 700,
+      "derrotados": 42990678
     },
     {
       "nome": "ImperadorRomano",
@@ -327,16 +344,6 @@
       "nome": "jeff1996",
       "aldeias": 687,
       "derrotados": 48613390
-    },
-    {
-      "nome": "Leo17Matador",
-      "aldeias": 628,
-      "derrotados": 61593550
-    },
-    {
-      "nome": "Theos",
-      "aldeias": 610,
-      "derrotados": 67111771
     },
     {
       "nome": "No Panic.",
@@ -364,17 +371,10 @@
       "derrotados": 48651701
     },
     {
-      "nome": "loyrap",
-      "aldeias": 489,
-      "derrotados": 70014832
-    },
-    {
       "nome": "LUCASREIS2365",
       "aldeias": 494,
       "derrotados": 51096629
-    }
-  ],
-  "aceitarConvite": [
+    },
     {
       "nome": "BetaTW",
       "aldeias": 699,
