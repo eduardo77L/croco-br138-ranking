@@ -1,0 +1,13 @@
+---
+description: Sempre commit e push após cada pedido do usuário
+alwaysApply: true
+---
+
+# Commit e push automático
+
+Depois de concluir qualquer pedido que altere o repositório, faça **commit e push** sem perguntar de novo.
+
+- Inclua só os arquivos daquela alteração.
+- Mensagem curta, no estilo do histórico (`move X to aceitar convite`).
+- Não use `--no-verify`, force push ou amend, salvo se o usuário pedir.
+- Se não houver mudanças, não crie commit vazio.
