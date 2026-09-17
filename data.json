@@ -3,7 +3,7 @@
   "classificados": [
     {
       "nome": "-Exorcista",
-      "aldeias": 989,
+      "aldeias": 992,
       "derrotados": 490770000
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "nome": "killer95s",
-      "aldeias": 1656,
+      "aldeias": 1657,
       "derrotados": 345320000
     },
     {
@@ -43,17 +43,17 @@
     },
     {
       "nome": "Gohanzinho",
-      "aldeias": 1256,
+      "aldeias": 1258,
       "derrotados": 228540000
     },
     {
       "nome": "korba4",
-      "aldeias": 2288,
+      "aldeias": 2292,
       "derrotados": 216620000
     },
     {
       "nome": "Willlll29",
-      "aldeias": 786,
+      "aldeias": 787,
       "derrotados": 199090000
     },
     {
@@ -68,37 +68,37 @@
     },
     {
       "nome": "JTZjunior",
-      "aldeias": 1189,
+      "aldeias": 1190,
       "derrotados": 181220000
     },
     {
       "nome": "LaTiNoS",
-      "aldeias": 920,
+      "aldeias": 922,
       "derrotados": 176720000
     },
     {
       "nome": "Niihsan",
-      "aldeias": 1015,
+      "aldeias": 1016,
       "derrotados": 166900000
     },
     {
       "nome": "KILLER84",
-      "aldeias": 1146,
+      "aldeias": 1149,
       "derrotados": 161840000
     },
     {
       "nome": "wladimor",
-      "aldeias": 737,
+      "aldeias": 739,
       "derrotados": 157940341
     },
     {
       "nome": "Noke Destroyer",
-      "aldeias": 1553,
+      "aldeias": 1555,
       "derrotados": 157320000
     },
     {
       "nome": "FladiS0ouza",
-      "aldeias": 802,
+      "aldeias": 803,
       "derrotados": 152790000
     },
     {
@@ -113,12 +113,12 @@
     },
     {
       "nome": "Dxpedra",
-      "aldeias": 1158,
+      "aldeias": 1159,
       "derrotados": 146270000
     },
     {
       "nome": "K A Z A K H S T A N",
-      "aldeias": 1274,
+      "aldeias": 1275,
       "derrotados": 142340000
     },
     {
@@ -133,7 +133,7 @@
     },
     {
       "nome": "Ed Great II",
-      "aldeias": 2244,
+      "aldeias": 2245,
       "derrotados": 128740000
     },
     {
@@ -158,17 +158,17 @@
     },
     {
       "nome": "Killer Rodigro",
-      "aldeias": 883,
+      "aldeias": 884,
       "derrotados": 100020000
     },
     {
       "nome": "Cillian Murphy",
-      "aldeias": 714,
+      "aldeias": 715,
       "derrotados": 97800000
     },
     {
       "nome": "Lorran Tribal",
-      "aldeias": 1128,
+      "aldeias": 1130,
       "derrotados": 97800000
     },
     {
@@ -205,7 +205,7 @@
   "emDisputa": [
     {
       "nome": "mat-pro-sitio",
-      "aldeias": 1326,
+      "aldeias": 1328,
       "derrotados": 87510000
     },
     {
@@ -215,17 +215,17 @@
     },
     {
       "nome": "Masterthief",
-      "aldeias": 1097,
+      "aldeias": 1098,
       "derrotados": 79082931
     },
     {
       "nome": "Sevak",
-      "aldeias": 1028,
+      "aldeias": 1029,
       "derrotados": 68484870
     },
     {
       "nome": "resgateiro",
-      "aldeias": 982,
+      "aldeias": 983,
       "derrotados": 62971542
     },
     {
@@ -245,7 +245,7 @@
     },
     {
       "nome": "ClaudioAndré",
-      "aldeias": 878,
+      "aldeias": 879,
       "derrotados": 68915599
     },
     {
@@ -255,12 +255,12 @@
     },
     {
       "nome": "BAD BOYS REVENGE",
-      "aldeias": 833,
+      "aldeias": 834,
       "derrotados": 78326066
     },
     {
       "nome": "LordDrako",
-      "aldeias": 816,
+      "aldeias": 817,
       "derrotados": 76906239
     },
     {
@@ -275,12 +275,12 @@
     },
     {
       "nome": "brunomf14",
-      "aldeias": 806,
+      "aldeias": 808,
       "derrotados": 62806595
     },
     {
       "nome": "mayconassmann",
-      "aldeias": 736,
+      "aldeias": 737,
       "derrotados": 70841134
     },
     {
@@ -300,7 +300,7 @@
     },
     {
       "nome": "Theos",
-      "aldeias": 610,
+      "aldeias": 612,
       "derrotados": 67111771
     },
     {
@@ -330,20 +330,8 @@
     },
     {
       "nome": "Eduhahaha",
-      "aldeias": 670,
+      "aldeias": 671,
       "derrotados": 53669020
-    }
-  ],
-  "aceitarConvite": [
-    {
-      "nome": "loyrap",
-      "aldeias": 489,
-      "derrotados": 70014832
-    },
-    {
-      "nome": "Kenob",
-      "aldeias": 791,
-      "derrotados": 51825874
     },
     {
       "nome": "No Panic.",
@@ -352,17 +340,29 @@
     },
     {
       "nome": "ppngo",
-      "aldeias": 569,
+      "aldeias": 570,
       "derrotados": 45892531
     },
     {
       "nome": "Rafa787",
-      "aldeias": 539,
+      "aldeias": 542,
       "derrotados": 42189867
+    }
+  ],
+  "aceitarConvite": [
+    {
+      "nome": "loyrap",
+      "aldeias": 490,
+      "derrotados": 70014832
+    },
+    {
+      "nome": "Kenob",
+      "aldeias": 797,
+      "derrotados": 51825874
     },
     {
       "nome": "tsw1",
-      "aldeias": 511,
+      "aldeias": 512,
       "derrotados": 34614975
     },
     {
@@ -372,7 +372,7 @@
     },
     {
       "nome": "LUCASREIS2365",
-      "aldeias": 494,
+      "aldeias": 497,
       "derrotados": 51096629
     },
     {
@@ -402,7 +402,7 @@
     },
     {
       "nome": "lesj",
-      "aldeias": 389,
+      "aldeias": 387,
       "derrotados": 41195253
     },
     {
@@ -427,7 +427,7 @@
     },
     {
       "nome": "The old Lorde King",
-      "aldeias": 234,
+      "aldeias": 233,
       "derrotados": 14366208
     },
     {
@@ -511,5 +511,5 @@
       "derrotados": 1505046
     }
   ],
-  "dominancia": 47.35
+  "dominancia": 51.84
 }
